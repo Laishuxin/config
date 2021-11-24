@@ -1,0 +1,10 @@
+{
+	"optOut": false,
+	"lastUpdateCheck": 1637329531854,
+	"update": {
+		"latest": "2.0.15",
+		"current": "2.0.12",
+		"type": "patch",
+		"name": "nodemon"
+	}
+}

@@ -1,0 +1,262 @@
+{
+	"bold": {
+		"prefix": "bold",
+		"body": "**$0**"
+	},
+	"highline": {
+		"prefix": "highline",
+		"body": "==$0=="
+	},
+	"reference": {
+		"prefix": "reference",
+		"body": "[^$0]"
+	},
+	"math": {
+		"prefix": "math",
+		"body": "$$1$$0"
+	},
+	"code": {
+		"prefix": "code",
+		"body": "`$1`$0"
+	},
+	"code:cpp": {
+		"prefix": "code:cpp",
+		"body": [
+			"```cpp",
+			"$0",
+			"```"
+		]
+	},
+	"code:json": {
+		"prefix": "code:json",
+		"body": [
+			"```json",
+			"$0",
+			"```"
+		]
+	},
+	"code:javascript": {
+		"prefix": "code:javascript",
+		"body": [
+			"```javascript",
+			"$0",
+			"```"
+		]
+	},
+	"code:typescript": {
+		"prefix": "code:typescript",
+		"body": [
+			"```typescript",
+			"$0",
+			"```"
+		]
+	},
+	"code:jsx": {
+		"prefix": "code:jsx",
+		"body": [
+			"```jsx",
+			"$0",
+			"```"
+		]
+	},
+	"code:tsx": {
+		"prefix": "code:tsx",
+		"body": [
+			"```tsx",
+			"$0",
+			"```"
+		]
+	},
+	"code:css": {
+		"prefix": "code:css",
+		"body": [
+			"```css",
+			"$0",
+			"```"
+		]
+	},
+	"code:html": {
+		"prefix": "code:html",
+		"body": [
+			"```css",
+			"$0",
+			"```"
+		]
+	},
+	"container:info": {
+		"prefix": "container:info",
+		"body": [
+			"::: info",
+			"$0",
+			":::"
+		]
+	},
+	"container:tip": {
+		"prefix": "container:tip",
+		"body": [
+			"::: tip",
+			"$0",
+			":::"
+		]
+	},
+	"container:warning": {
+		"prefix": "container:warning",
+		"body": [
+			"::: warning",
+			"$0",
+			":::"
+		]
+	},
+	"container:danger": {
+		"prefix": "container:danger",
+		"body": [
+			"::: danger",
+			"$0",
+			":::"
+		]
+	},
+	"config:fe": {
+		"prefix": "config:fe",
+		"body": [
+			"---",
+			"title: 前端 - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+	"config:fe-javascript": {
+		"prefix": "config:fe-javascript",
+		"body": [
+			"---",
+			"title: JavaScript - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+	"config:fe-html": {
+		"prefix": "config:fe-html",
+		"body": [
+			"---",
+			"title: HTML - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+	"config:fe-css": {
+		"prefix": "config:fe-css",
+		"body": [
+			"---",
+			"title: CSS - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+	"config:framework": {
+		"prefix": "config:framework",
+		"body": [
+			"---",
+			"title: 框架 - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+	"config:framework-react": {
+		"prefix": "config:framework-react",
+		"body": [
+			"---",
+			"title: React - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+	"config:framework-vue": {
+		"prefix": "config:framework-vue",
+		"body": [
+			"---",
+			"title: Vue - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+	"config:cs-ds-algorithms": {
+		"prefix": "config:cs-ds-algorithms",
+		"body": [
+			"---",
+			"title: 数据结构与算法 - $1",
+			"time: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"author: ru shui",
+			"category: data structure and algorithms",
+			"tag:",
+			"  - $2",
+			"visitor: false",
+			"article: true",
+			"sticky: false",
+			"---",
+			"",
+			"$0",
+		]
+	},
+}

@@ -1,0 +1,71 @@
+{
+	"icc": {
+		"prefix": "icc",
+		"body": [
+			"import React from 'react'",
+			"",
+			"export const ${1:${TM_FILENAME_BASE}} = () => {",
+			"  return $0",
+			"}"
+		]
+	},
+	"clog": {
+		"prefix": "clog",
+		"body": "console.log($0)"
+	},
+	"cwarn": {
+		"prefix": "cwarn",
+		"body": "console.warn($0)",
+	},
+	"cerr": {
+		"prefix": "cerr",
+		"body": "console.error($0)",
+	},
+	"import:react": {
+		"prefix": "import:react",
+		"body": "import React from 'react'$0"
+	},
+	"import:fc": {
+		"prefix": "import:fc",
+		"body": [
+			"import React from 'react'",
+			"",
+			"export interface ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}Props {}",
+			"const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}: React.FC<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}Props> = (props: ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}Props) => {",
+			"\t$0",
+			"\treturn <div className=\"${TM_FILENAME_BASE}\"></div>",
+			"}",
+			"",
+			"${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}.displayName = '${TM_FILENAME_BASE}'",
+			"export default ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}"
+		]
+	},
+	"import:fc-memo": {
+		"prefix": "import:fc-memo",
+		"body": [
+			"import React from 'react'",
+			"",
+			"export interface ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}Props {}",
+			"const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}: React.FC<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}Props> = React.memo((props: ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}Props) => {",
+			"\t$0",
+			"\treturn <div className=\"${TM_FILENAME_BASE}\"></div>",
+			"})",
+			"",
+			"${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}.displayName = '${TM_FILENAME_BASE}'",
+			"export default ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}"
+		]
+	},
+	"import:test-component": {
+		"prefix": "import:test-component",
+		"body": [
+			"import React from 'react'",
+			"import { render, screen } from '@testing-library/react'",
+			"import $1",
+			"",
+			"describe('${TM_FILENAME_BASE/\\.(test|spec)//}', () => {",
+			"\tit('should $0', () => {",
+			"\t})",
+			"})",
+		]
+	},
+}

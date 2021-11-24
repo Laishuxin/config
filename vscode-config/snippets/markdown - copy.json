@@ -1,0 +1,467 @@
+{
+	// Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"table center": {
+		"prefix": "tcenter",
+		"body": ":------:|"
+	},
+	"table left": {
+		"prefix": "tleft",
+		"body": ":------|"
+	},
+	"table right": {
+		"prefix": "tright",
+		"body": "------:|"
+	},
+	"header": {
+		"prefix": "header",
+		"body": [
+			"---",
+			"title: $1",
+			"time: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"author: ${2:ru shui}",
+			"category: ${3:系列文章}",
+			"tag:",
+			"  - typescript$4",
+			"visitor: false",
+			"article: ${5:true}",
+			"sticky: false",
+			"---",
+			"",
+			"$0"
+		]
+	},
+	"config:react": {
+		"prefix": "config:react",
+		"body": [
+			"---",
+			"title: react - $1",
+			"time: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"author: ru shui",
+			"category: framework",
+			"tag:",
+			"  - react",
+			"visitor: false",
+			"article: true",
+			"sticky: false",
+			"---",
+			"",
+			"$0"
+		]
+	},
+	"config:js": {
+		"prefix": "config:js",
+		"body": [
+			"---",
+			"title: js - $1",
+			"time: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"author: ru shui",
+			"category: javascript",
+			"tag:",
+			"  - javascript",
+			"visitor: false",
+			"article: true",
+			"sticky: false",
+			"---",
+			"",
+			"$0"
+		]
+	},
+	"config:css": {
+		"prefix": "config:css",
+		"body": [
+			"---",
+			"title: css - $1",
+			"time: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"author: ru shui",
+			"category: css",
+			"tag:",
+			"  - css",
+			"visitor: false",
+			"article: true",
+			"sticky: false",
+			"---",
+			"",
+			"$0"
+		]
+	},
+	"config:english": {
+		"prefix": "config:english",
+		"body": [
+			"---",
+			"title: 英语$1 - $2",
+			"time: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"author: ru shui",
+			"category: English",
+			"tag:",
+			"  - English",
+			"visitor: false",
+			"article: true",
+			"sticky: false",
+			"---",
+			"",
+			"$0"
+		]
+	},
+	"codet": {
+		"prefix": "codet",
+		"description": "code block with typescript",
+		"body": [
+			"```typescript",
+			"$0",
+			"```"
+		]
+	},
+	"codetsx": {
+		"prefix": "codetsx",
+		"description": "code block with tsx",
+		"body": [
+			"```tsx",
+			"$0",
+			"```"
+		]
+	},
+	"codejsx": {
+		"prefix": "codejsx",
+		"description": "code block with jsx",
+		"body": [
+			"```jsx",
+			"$0",
+			"```"
+		]
+	},
+	"codej": {
+		"prefix": "codej",
+		"description": "code block with javascript",
+		"body": [
+			"```javascript",
+			"$0",
+			"```"
+		]
+	},
+	"quotePic": {
+		"prefix": "quotePic",
+		"description": "quote picture",
+		"body": [
+			"<center>（图片来源：$1）</center>",
+			"$0",
+		]
+	},
+	"fig": {
+		"prefix": "fig",
+		"description": "html imgage tag",
+		"body": "<div style=\"text-align: center;\"><img src=\"$0\" alt=\"img\" style=\"width:80%;\"/></div>"
+	},
+	"blog": {
+		"prefix": "blog",
+		"description": "blog structure",
+		"body": [
+			"## 简介$0",
+			"<!-- （Introduction）： [必备] [文件] 提供对产品和文档本身的总体的、扼要的说明 -->",
+			"## 快速上手",
+			"<!-- （Getting Started）：[可选] [文件] 如何最快速地使用产品 -->",
+			"## 入门篇",
+			"",
+			"<!-- （Basics）： [必备] [目录] 又称”使用篇“，提供初级的使用教程 -->",
+			"",
+			"### 环境准备",
+			"",
+			"<!-- （Prerequisite）：[必备] [文件] 软件使用需要满足的前置条件 -->",
+			"",
+			"### 安装",
+			"",
+			"<!-- （Installation）：[可选] [文件] 软件的安装方法 -->",
+			"",
+			"### 设置",
+			"",
+			"<!-- （Configuration）：[必备] [文件] 软件的设置 -->",
+			"",
+			"<!-- ## 进阶篇 -->",
+			"",
+			"<!-- （Advanced)：[可选] [目录] 又称”开发篇“，提供中高级的开发教程 -->",
+			"",
+			"<!-- ## API -->",
+			"",
+			"<!-- （Reference）：[可选] [目录|文件] 软件 API 的逐一介绍 -->",
+			"",
+			"<!-- ## FAQ -->",
+			"",
+			"<!-- ：[可选] [文件] 常见问题解答 -->",
+			"",
+			"## 参考链接",
+			"",
+			"<!-- ## 附录 -->",
+			"",
+			"<!-- （Appendix）：[可选] [目录] 不属于教程本身、但对阅读教程有帮助的内容 -->",
+			"",
+			"<!-- ### Glossary -->",
+			"",
+			"<!-- ：[可选] [文件] 名词解释 -->",
+			"",
+			"<!-- ### Recipes -->",
+			"",
+			"<!-- ：[可选] [文件] 最佳实践 -->",
+			"",
+			"<!-- ### Troubleshooting -->",
+			"",
+			"<!-- ：[可选] [文件] 故障处理 -->",
+			"",
+			"### ChangeLog",
+			"",
+			"<!-- ：[可选] [文件] 版本说明 -->",
+			"",
+			"### Feedback",
+			"",
+			"<!-- ：[可选] [文件] 反馈方式 -->",
+		]
+	},
+	"bold": {
+		"prefix": "bold",
+		"body": "**$0**"
+	},
+	"highline": {
+		"prefix": "highline",
+		"body": "==$0=="
+	},
+	"reference": {
+		"prefix": "reference",
+		"body": "[^$0]"
+	},
+	"code": {
+		"prefix": "code",
+		"body": "`$1`$0"
+	},
+	"code:cpp": {
+		"prefix": "code:cpp",
+		"body": [
+			"```cpp",
+			"$0",
+			"```"
+		]
+	},
+	"code:json": {
+		"prefix": "code:json",
+		"body": [
+			"```json",
+			"$0",
+			"```"
+		]
+	},
+	"code:javascript": {
+		"prefix": "code:javascript",
+		"body": [
+			"```javascript",
+			"$0",
+			"```"
+		]
+	},
+	"code:typescript": {
+		"prefix": "code:typescript",
+		"body": [
+			"```typescript",
+			"$0",
+			"```"
+		]
+	},
+	"code:jsx": {
+		"prefix": "code:jsx",
+		"body": [
+			"```jsx",
+			"$0",
+			"```"
+		]
+	},
+	"code:tsx": {
+		"prefix": "code:tsx",
+		"body": [
+			"```tsx",
+			"$0",
+			"```"
+		]
+	},
+	"code:css": {
+		"prefix": "code:css",
+		"body": [
+			"```css",
+			"$0",
+			"```"
+		]
+	},
+	"code:html": {
+		"prefix": "code:html",
+		"body": [
+			"```css",
+			"$0",
+			"```"
+		]
+	},
+	"container:info": {
+		"prefix": "container:info",
+		"body": [
+			"::: info",
+			"$0",
+			":::"
+		]
+	},
+	"container:tip": {
+		"prefix": "container:tip",
+		"body": [
+			"::: tip",
+			"$0",
+			":::"
+		]
+	},
+	"container:warning": {
+		"prefix": "container:warning",
+		"body": [
+			"::: warning",
+			"$0",
+			":::"
+		]
+	},
+	"container:danger": {
+		"prefix": "container:danger",
+		"body": [
+			"::: danger",
+			"$0",
+			":::"
+		]
+	},
+	"config:fe": {
+		"prefix": "config:fe",
+		"body": [
+			"---",
+			"title: 前端 - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+	"config:fe-javascript": {
+		"prefix": "config:fe-javascript",
+		"body": [
+			"---",
+			"title: JavaScript - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+	"config:fe-html": {
+		"prefix": "config:fe-html",
+		"body": [
+			"---",
+			"title: HTML - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+	"config:fe-css": {
+		"prefix": "config:fe-css",
+		"body": [
+			"---",
+			"title: CSS - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+	"config:framework": {
+		"prefix": "config:framework",
+		"body": [
+			"---",
+			"title: 框架 - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+	"config:framework-react": {
+		"prefix": "config:framework-react",
+		"body": [
+			"---",
+			"title: React - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+	"config:framework-vue": {
+		"prefix": "config:framework-vue",
+		"body": [
+			"---",
+			"title: Vue - $1 # 博客标题（必须）",
+			"subtitle: $2 # 博客副标题（可选）",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"header_style: image # 是否在博客中显示封面图：`image`（显示） / `text`（不显示）（可选，默认为 `text`）",
+			"header_img: /img/home-bg/1.jpg # 博客封面图（必须，即使上一项选了 `text`，图片也需要在首页显示）",
+			"header_mask: rgba(40, 57, 101, .4) # 封面图遮罩（可选）",
+			"catalog: true # 是否启用右侧目录：false / true（可选，默认为 false）",
+			"tags: # 博客标签",
+			"  - $3",
+			"---",
+			"",
+			"$0",
+		]
+	},
+}

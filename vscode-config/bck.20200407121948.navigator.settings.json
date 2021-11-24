@@ -1,0 +1,124 @@
+{
+    "editor.renderWhitespace": "all",
+    "window.zoomLevel": 0,
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    "python.pythonPath": "D:\\anaconda\\python.exe",
+    //"python.terminal.activateEnvironment": false,
+    "workbench.iconTheme": "vscode-icons",
+    "extensions.ignoreRecommendations": true,
+    "workbench.colorTheme": "Monokai",
+    "view-in-browser.customBrowser": "iexplore",
+    "files.autoSave": "afterDelay",
+    "cssrem.rootFontSize": 40,
+    "python.linting.flake8Enabled": true,
+    "git.autofetch": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "vsicons.dontShowNewVersionMessage": true,
+    "python.jediEnabled": false,
+    "sync.gist": "aed1f2815ed8cf20f99cbd3b53b6a1c0",
+    "remote.SSH.showLoginTerminal": true,
+    "vim.useCtrlKeys": false,
+    "todo-tree.tree.showScanModeButton": false,
+    "cpplint.cpplintPath": "D:\\anaconda\\Scripts\\cpplint.exe",
+    "[matlab]": {"files.encoding": "gb2312",},
+    "latex-workshop.latex.recipes": [{
+      "name": "xelatex",
+      "tools": [
+          "xelatex"
+      ]
+    }, {
+      "name": "latexmk",
+      "tools": [
+          "latexmk"
+      ]
+    },
+    
+    {
+      "name": "pdflatex -> bibtex -> pdflatex*2",
+      "tools": [
+          "pdflatex",
+          "bibtex",
+          "pdflatex",
+          "pdflatex"
+      ]
+    }
+    ],
+    "latex-workshop.latex.tools": [{
+    "name": "latexmk",
+    "command": "latexmk",
+    "args": [
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-pdf",
+      "%DOC%"
+    ]
+    }, {
+    "name": "xelatex",
+    "command": "xelatex",
+    "args": [
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "%DOC%"
+    ]
+    }, {
+    "name": "pdflatex",
+    "command": "pdflatex",
+    "args": [
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "%DOC%"
+    ]
+    }, {
+    "name": "bibtex",
+    "command": "bibtex",
+    "args": [
+      "%DOCFILE%"
+    ]
+    }],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk"
+    ],
+    
+    //"editor.fontSize": 18,
+    //"terminal.integrated.shellArgs.windows": ["/K chcp 65001 >nul"],
+    //"terminal.integrated.fontFamily": "Lucida Console",
+    //"files.autoGuessEncoding": true
+    // "vim.normalModeKeyBindings": [
+    //     {
+    //         "before": ["j"],
+    //         "after": ["h"]
+    //     },
+    //     {
+    //         "before": ["k"],
+    //         "after": ["j"]
+    //     },
+    //     {
+    //         "before": ["i"],
+    //         "after": ["k"]
+    //     },
+    // ],
+    
+}

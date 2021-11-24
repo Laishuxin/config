@@ -1,0 +1,28 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.splitEditorDown"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.splitEditorLeft"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "workbench.action.splitEditorUp"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.splitEditorRight"
+    },
+    {
+        "key": "alt+z",
+        "command": "-editor.action.toggleWordWrap"
+    },
+    {
+        "key": "alt+z",
+        "command": "-vue-helper.pxRem",
+        "when": "editorTextFocus"
+    }
+]
